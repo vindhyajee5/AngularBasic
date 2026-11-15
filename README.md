@@ -182,6 +182,22 @@ you can write test cases for:
 - Business logic
 The test runner depends on your project's configuration.
 
+****
+**Used to identify code-quality and style issues**.****
+ng lint
+**Used to update Angular packages and apply available migrations.**
+ng update
+**Update Angular framework and CLI:**
+ng update @angular/cli @angular/core
+**Used to add external libraries and execute their Angular setup schematics.**
+ng add @angular/material
+**Used to read or modify Angular workspace configuration in angular.json.**
+ng config
+Read a specific property:
+ng config cli.packageManager
+Set a property:
+ng config cli.packageManager npm
+
 
 
 
