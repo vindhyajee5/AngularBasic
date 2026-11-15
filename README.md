@@ -63,3 +63,31 @@ import type { Student } from "./Student.js";
 4.	noUncheckedIndexedAccess. Your LargestElement and Frequency code already handles undefined correctly (?? 0, !== undefined), so it passes either way. Keep that style; it is good TypeScript.
 5.	Same-name variables. result, result1 and result2 do not clash, because moduleDetection: "force" in your tsconfig treats every file as its own module. Do not remove that setting.
 
+////////////////////////////////////////////
+Angular CLI
+
+Angular CLI ek command-line tool hai (ng command). Isse aap Angular project banate ho, chalate ho, build karte ho, aur component, service jaise files generate karte ho. Aapne TypeScript seekh liya hai, to ab Angular ke liye ye next step hai.
+
+Step 1: Node.js install karo
+
+Angular CLI npm se install hota hai, aur npm Node.js ke saath aata hai.
+
+nodejs.org se LTS version download karke install karo.
+Naya terminal kholo aur check karo:
+powershell
+node -v
+npm -v
+
+Dono ka version dikhe to sahi hai. Angular har version ke liye kuch Node versions support karta hai. Exact list angular.dev par “Version compatibility” me dekh lo. Latest LTS Node aam taur par chal jata hai.
+
+Step 2: Angular CLI install karo
+powershell
+npm install -g @angular/cli
+
+-g ka matlab global install, yani kisi bhi folder se ng command chalegi.
+
+Check karo:
+
+powershell
+ng version
+
