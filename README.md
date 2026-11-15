@@ -90,4 +90,98 @@ Check karo:
 
 powershell
 ng version
+Command	Kaam
+ng new app-name	Naya project banata hai
+ng serve	Dev server chalata hai (port 4200)
+ng serve --open	Server chala ke browser bhi khol deta hai
+ng generate component home (ya ng g c home)	Naya component banata hai
+ng g service student	Naya service banata hai
+ng build	Production ke liye build banata hai (dist/ me)
+ng test	Unit tests chalata hai
+ng version	CLI aur Angular ka version dikhata hai
+////////////////
+ng new my-first-app
+cd my-first-app
+ng serve
+///////////
+**Angular CLI Workflow**
+Install Node.js
+
+Required JavaScript runtime and npm package manager.
+
+
+
+Install Angular CLI
+
+**npm install -g @angular/cli**
+
+**Create project**
+
+ng new my-app
+
+**Generate components**
+ng generate component home
+
+**Start application**
+
+ng serve
+
+**Test application**
+
+ng test
+
+**Build application**
+
+ng build
+
+///////////////////////
+****ng generate**
+Used to generate Angular components, services, pipes, directives and other files.**
+ng generate component component-name
+**Short form:**
+ng g c component-name
+**Example:-**
+ng g c home
+ng g c login
+ng g c dashboard
+ng g s user
+ng g s employee
+ng g p custom
+ng g d highlight
+.......................
+**Short command	Full command**
+ng g c home	      **Generate component**
+ng g s user	       **** Generate service****
+ng g p custom	       **Generate pipe**
+ng g d highlight	 ** Generate directive**
+/////////////////////
+**ng serve**
+**Used to run the Angular application locally.
+ng serve
+Open browser automatically:
+ng serve --open
+Change port:
+ng serve --port 4300
+Default URL:
+http://localhost:4200**
+
+**It watches file changes and rebuilds the application during development**
+Development build:
+ng build
+Production build:
+ng build --configuration production
+Build output is generally generated inside:
+dist/
+
+**Used to execute unit tests.**
+ng test
+you can write test cases for:
+- Components
+- Services
+- Functions
+- Business logic
+The test runner depends on your project's configuration.
+
+
+
 
